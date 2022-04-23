@@ -8,7 +8,7 @@
 
 ## <p align="center">O aplikacji</p>
 
-Aplikacja New Songs Relase (w skrócie NSR) informuje użytkownika o nowych utworach artysty. Należy wpisać nazwę artysty, by móc na bieżąco śledzić nowości danej osoby. Strona aplikacji posiada wyszukiwarkę, gdzie można wpisać nazwę wykonawcy. Za pomocą ogólnodostępnego (API ze Spotify) wyświetli się dany wykonawca z nowym utworem.
+Aplikacja New Songs Relases (w skrócie NSR) informuje użytkownika o nowych utworach artysty. Należy wpisać nazwę artysty, by móc na bieżąco śledzić nowości danej osoby. Strona aplikacji posiada wyszukiwarkę, gdzie można wpisać nazwę wykonawcy. Za pomocą ogólnodostępnego (API ze Spotify) wyświetli się dany wykonawca z nowym utworem.
 
 ![image](https://user-images.githubusercontent.com/101893519/164735954-76599537-585b-4006-a6e3-880579de5a17.png)
 
