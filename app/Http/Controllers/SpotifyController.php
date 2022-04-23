@@ -10,8 +10,8 @@ class SpotifyController extends Controller
 {
     public function polaczenie() {
         $session = new Session(
-           '525ec07e9b5e461d85b9855ebc69a3b6',
-            'e80274b8d1cf41f48858d42893a54dae'
+           $_ENV['CLIENT_ID'],
+            $_ENV['CLIENT_ID_SECRET']
         );
         $session->requestCredentialsToken();
         $accessToken = $session->getAccessToken();
