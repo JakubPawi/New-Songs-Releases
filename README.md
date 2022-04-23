@@ -1,64 +1,93 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## <p align="center" style="text-size:72px">New Songs Releases</p>
+<img src="https://img.shields.io/badge/tests-passed-green.svg">      <img       src="https://img.shields.io/badge/made%20with-PHP-purple.svg"> <img src="https://img.shields.io/badge/made%20with-jQuery-yellow.svg">
+           
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+<br>
 
-## About Laravel
+## <p align="center">O aplikacji</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Aplikacja New Songs Relase (w skrócie NSR) informuje użytkownika o nowych utworach artysty. Należy wpisać nazwę artysty, by móc na bieżąco śledzić nowości danej osoby. Strona aplikacji posiada wyszukiwarkę, gdzie można wpisać nazwę wykonawcy. Za pomocą ogólnodostępnego (API ze Spotify) wyświetli się dany wykonawca z nowym utworem.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![image](https://user-images.githubusercontent.com/101893519/164735954-76599537-585b-4006-a6e3-880579de5a17.png)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## <p align="center">Uruchomienie</p>
+Aby uruchomić aplikację musimy przygotować plik .env i w miejsce CLIENT_ID i CLIENT_ID_SECRET wkleić otrzymane wartości od Spotify Web API. Następnie musimy wykonać w CMD następujące komendy: 
 
-## Learning Laravel
+```
+composer install
+npm install
+php artisan key:generate
+php migrate 
+php artisan serve
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## <p align="center">Licencja</p>
+<p align="center>
+          Visual Studio Code (IDE)
+          
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+New Songs Releases jest open-sourcowym projektem na licencji MIT. Do utworzenia projektu został użyty framework Laravel na licencji MIT, biblioteka [Spotify-Web-Api-PHP](https://github.com/jwilsson/spotify-web-api-php) również na licencji MIT i Spotify Web Api użyte w celach edukacyjnych. 
 
-## Laravel Sponsors
+## <p align="center">Autorzy</p> 
+[Hubert Łebkowski](https://github.com/lebkowskih)<br>
+[Szymon Ludwiński](https://github.com/szymonlud)<br>
+[Jakub Pawiński](https://github.com/JakubPawi)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## <p align="center"> Specyfikacja wymagań </p>
+<table>
+  
+  <tr>
+    <th>Definicja wymagania(scenariusz)</th>
+    <td>Użytkownik wyszukuje blibliotekę piosenek i albumów, a wśród nich najnowsze wydanie</td>
+  </tr>
+  
+  <tr>
+    <th>Aktorzy</th>
+    <td>Użytkownik chcący wyszukać najnowszy utwór</td>
+  </tr>
+  
+   <tr>
+    <th>Warunki początkowe</th>
+    <td>Użytkownik wchodzący na stronę internetową</td>
+  </tr>
+   
+  <tr>
+    <th>Przebieg realizacji scenariusza</th>
+    <td>
+      <ul>
+      <li>Użytkownik wchodzi na stronę internetową</li>
+      <li>W odpowiednim polu wpisuje nazwę artysty, którego chce wyszukać i klika przycisk</li>
+      <li>System wyświetla katalog piosenek i albumów, wskazując najnowszy(zmieniając tło na żółte)</li>   
+      </ul>
+      </td>
+  </tr>
+</table>
+<br>
+<b>Wymagania funkcjonalne</b>
+<ul>
+  <li>użytkownik będzie mógł przeszukać katalog utwórów i albumów danego artysty </li>
+  <li>strona internetowa udostępni katalog utwóró i albumów danego artysty</li>
+</ul>
+<br>
+<b>Wymagania niefunkcjonalne</b>
+<ul>
+  <li>dostępność/niezawodność - strona powinna być dostępna cały czas</li>
+  <li>wydajność - strona powinna w szybkim czasie zwracać katalog utworów i albumów</li>
+  <li>użyteczność - po wyszukaniu od razu mamy informację, który utwór jest najnowszy</li>
+</ul>
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## <p align="center">Architektura systemu</p>
+<p align="center"><b>Stos technologiczny - architektura uruchomieniowa</b></p>
+<ul>
+                    <li>Visual Studio Code (IDE)</li>
+                    <li>PHP,CSS,JavaScript</li>
+                    <li>Laravel,jQuery</li>
+                    <li>BootStrap 4</li>
+                    <li>npm, artisan</li>
+                    <li>MySQL</li>
+                    <li>Git</li>
+</ul>
+                 
+## <p align="center">Testy</p>               
