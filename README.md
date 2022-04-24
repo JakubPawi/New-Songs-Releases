@@ -79,9 +79,18 @@ New Songs Releases jest open-sourcowym projektem na licencji MIT. Do utworzenia 
 </ul>
 
 ## <p align="center">Architektura systemu</p>
+<p align="center"><b>Stos technologiczny - architektura rozwojowa</b></p>
+<ul>
+                                                         
+<li>Visual Studio Code (IDE)</li>
+<li>Laravel</li>
+<li>Spotify Web API</li>
+                 
+</ul>
+
+                                     
 <p align="center"><b>Stos technologiczny - architektura uruchomieniowa</b></p>
 <ul>
-                    <li>Visual Studio Code (IDE)</li>
                     <li>PHP,CSS,JavaScript</li>
                     <li>Laravel,jQuery</li>
                     <li>BootStrap 4</li>
