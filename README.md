@@ -1,5 +1,5 @@
 ## <p align="center" style="text-size:72px">New Songs Releases</p>
-<img src="https://img.shields.io/badge/tests-passed-green.svg">      <img       src="https://img.shields.io/badge/made%20with-PHP-purple.svg"> <img src="https://img.shields.io/badge/made%20with-jQuery-yellow.svg"><img src="https://img.shields.io/badge/License-MIT-red.svg">
+<img src="https://img.shields.io/badge/tests-passed-green.svg">      <img       src="https://img.shields.io/badge/made%20with-PHP-purple.svg"> <img src="https://img.shields.io/badge/made%20with-jQuery-yellow.svg"> <img src="https://img.shields.io/badge/License-MIT-red.svg">
            
 
 <p align="center">
