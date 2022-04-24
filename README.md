@@ -91,4 +91,10 @@ New Songs Releases jest open-sourcowym projektem na licencji MIT. Do utworzenia 
 </ul>
                  
 ## <p align="center">Testy</p>               
-<img src="https://imgur.com/a/ScpJGvd">
+<ul>
+                 
+<li>Test sprawdzający czy Token został dodany do bazy danych co ma kluczowe znaczenie dla działania całej aplikacji</li>
+                    
+</ul>
+                    
+<img src="https://i.imgur.com/YEMgQDj.png">
